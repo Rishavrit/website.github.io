@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css"href="Kumar.css">
+    </head>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    }
+    .header{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('  https://i.ibb.co/XLVFhQc/pexels-photo-1005417.jpg');
+    }
+    nav{
+    display:flex;
+    padding:2% 4%;
+    justify-content:space-between;
+    align-items:center ;
+    }
+    nav img{
+    width:80px;
+    border-radius:30px;
+    
+    }
+    .nav-lists{
+    flex:1;
+    text-align:right;
+    }
+    .nav-links ul li{
+    list-style:none;
+    display:inline-block ;
+    padding:5px 8px;
+    position:relative ;
+    }
+    .nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:10px;
+    }
+    .nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block ;
+    margin:auto;
+    transition:0.5s;
+    }
+    .nav-links ul li:hover::after{
+    width:100%;
+    transition:0.5s;
+    }
+    .textbox{
+    width:90%;
+    color:white;
+    position:absolute ;
+    top:40%;
+    left:30px;
+    transform:translate (-50%,-50%);
+    text-align:center ;
+    }
+    .textbox h1{
+    font-size:30px;
+    }
+    .textbox p{
+    margin:10px 0px 20px;
+    }
+    .btn{
+    display:inline-block ;
+    text-decoration:none;
+    color:white;
+    border:1px solid #fff;
+    padding:10px 20px;
+    font-size:13px;
+    background:transparent ;
+    position:relative ;
+    cursor:pointer ;
+    }
+    .btn:hover{
+    border:1px solid #f44336;
+    background:#f44336;
+    transition-duration:1s;
+    }
+    /*------course------*/
+    .course{
+    width:80%;
+    margin:auto;
+    text-align:center  ;
+    padding-top:100px;
+    }
+    .course h1{
+    font-size:30px;
+    text-align:center ;
+    font-weight:600;
+    }
+    .course p{
+    font-size:10px;
+    font-weight:300;
+    line-height:20px;
+    padding:10px;
+    }
+    .row{
+    margin-top:30px;
+    
+    
+    }
+    .course-col{
+    background:#fff3f3;
+    box-sizing:border-box ;
+    border-radius:10px;
+    margin-bottom:5%;
+    transition:3s;
+    border:1px solid black;
+    margin-top:50px;
+    }
+    .course-col:hover{
+    box-shadow:0px 0px 20px red;
+    transform:scale(1.2);
+    
+    };
+    
+    /*----campus---*/
+    .campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    
+    }
+    .campus-col{
+    
+    border-radius:10px;
+    margin-bottom:30px;
+    position:relative ;
+    overflow:hidden ;
+    transition:3s;
+    margin-top:50px;
+    
+    }
+    .campus-col:hover{
+    box-shadow:0px 0px 20px red;
+    cursor:pointer ;
+    transform:scale(1.2);
+    
+    .campus-col img{
+    width:100%;
+    margin-top:30px;
+    }}
+    
+    .layer{
+    background:transparent ;
+    height:100%;
+    width:100%;
+    position:absolute ;
+    top:0;
+    left:0;
+    transition:0.5s;
+    }
+    /*.layer:hover{
+    background:red;
+    }
+    */
+    
+    .rk{
+    width:80%;
+    margin:auto;
+    text-align:center ;
+    padding-top:100px;
+    }
+    
+    .test{
+    width:80%;
+    margin:auto;
+    padding-top:100px;
+    text-align:center ;
+    }
+    .test-col{
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+    background:#fff3f3;
+    padding:20px;
+    cursor:pointer ;
+    display:flex;
+    font-size:10px;
+    }
+    .test-col img{
+    height:100px;
+    margin-left:2px;
+    margin-right:5px;
+    border-radius:50%;
+    }
+    .test-col p{
+    padding:
+    }
+    .test-col h3{
+    
+    color:red;
+    }
+    
+    .test-col .fa{
+    color:#f44336;
+    }
+    
+    /*---call to us--*/
+    .cta{
+    margin:100px auto;
+    width:80%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://i.ibb.co/pWcNMg2/Screenshot-20220221-132645.jpg');
+    border-radius:10px;
+    text-align:center ;
+    padding:100px 0px;
+    transition:all ease-in-out 3s;
+    margin-top:100px;
+    }
+    .cta:hover{
+    box-shadow:0px 0px 20px red;
+    cursor:pointer ;
+    transform:scale(1.2);
+    .cta h1{
+    color:white;
+    margin-bottom:40px;
+    padding:0;
+    }
+    
+    .footer{
+    width:100%;
+    text-align:center ;
+    padding:30px 0;
+    
+    
+    }
+    .footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+    }
+    .icons .fa{
+    color:red;
+    margin:0 13px;
+    cursor:pointer ;
+    padding:5 px;
+    }
+    .fa-heart-o{
+    color:red;
+    }
+    
+    .rk{
+    background-color:rgba(0,0,0,0.2);
+    
+    padding:5px 5px;
+    display:flex;
+    justify-content:center ;
+    align-items:center ;
+    
+    height:10vh;
+    margin-bottom:0px;
+    }
+    .rk a{
+    text-decoration:none ;
+    font-size:25px;
+    color:white;
+    display:block;
+    border-radius:25px;
+    padding:5px 10px;
+    animation:anim 3.2s linear infinite ;
+    }
+    @keyframes anim{
+    0%{
+    border-top:3px solid #fff;
+    }
+    25%{
+    border-left:3px solid black;
+    }
+    50%{
+    border-bottom:3px solid red;
+    }
+    75%{
+    border-right:3px solid green;
+    }
+    
+    }
+    .rk a:hover{
+    background-color:#00b894;
+    cursor:pointer ;
+    };
+    
+    
+        .campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    
+}
+
+    .footer{
+    width:100%;
+    text-align:center ;
+    padding:30px 0;
+    
+
+}
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+}
+.icons .fa{
+    color:red;
+    margin:0 13px;
+    cursor:pointer ;
+    padding:5 px;
+}
+.fa-heart-o{
+    color:red;
+}
+
+
+
+
+     .facility h3 a{
+         text-decoration:none;
+         color:black;
+         display:block;
+         cursor:pointer;
+         border:2px solid black;
+         padding:5px;
+         position:relative;
+         border-radius:8px;
+     }
+      .facility h3 a:hover{
+          background:red;
+      }
+      .kk{
+    background-color:rgba(0,0,0,0.2);
+    
+    padding:5px 5px;
+    display:flex;
+    justify-content:center ;
+    align-items:center ;
+    
+    height:10vh;
+    margin-bottom:0px;
+}
+.kk a{
+    text-decoration:none ;
+    font-size:25px;
+    color:white;
+    display:block;
+    border-radius:25px;
+    padding:5px 10px;
+     animation:anim 3.2s linear infinite ;
+}
+@keyframes anim{
+    0%{
+        border-top:3px solid #fff;
+    }
+    25%{
+        border-left:3px solid black;
+    }
+    50%{
+        border-bottom:3px solid red;
+    }
+    75%{
+        border-right:3px solid green;
+    }
+
+}
+.kk a:hover{
+    background-color:#00b894;
+    cursor:pointer ;
+};
+    </style>
+    <body>
+        <section class="header">
+        <nav>
+            <a href="#"><img src=" https://i.ibb.co/C9MD0bv/images-15.jpg"></a>
+            <div class="nav-links">
+               <ul>
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">SERVICES</a></li>
+                   <li><a href="#">CONTACT</a></li>
+               </ul>     
+            </div>
+        </nav>
+            <div class="textbox">
+                <h1>World's biggest university</h1>
+                <p>Making website is now one of the easiest thing in the world .you just learn HTML,CSS,JAVAscript and you are good to go</p>
+                <a href="#" class="btn">Visit us to know more</a>
+            </div>
+        </section>
+        
+        <!---course----->
+        <section class="course">
+            <h1>Courses offer</h1>
+            <p>lorem ipsum dolor sit amet, consecteture adipiscing alit</p>
+            <div class="row">
+                <div class="course-col">
+                 <h1>Btech</h1>   
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciun.Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services to generate “Lorem ipsum” text, but now you can do that right in your editor. Just expand lorem or lipsum abbreviations to get the following snippet:</p>  
+               </div>     
+                    <div class="course-col">
+                 <h1>MBA</h1>   
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services to generate “Lorem ipsum” text, but now you can do that right in your editor. Just expand lorem or lipsum abbreviations to get the following snippet: </p>  
+                    </div>
+                    
+                    <div class="course-col">
+                 <h1>Post Gradutaion</h1>   
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services to generate “Lorem ipsum” text, but now you can do that right in your editor. Just expand lorem or lipsum abbreviations to get the following snippet: .</p>  
+                    
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <!--campus--->
+        </section>
+        <section class="campus">
+          <h1>Our global campus</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            
+           <div class="row">
+               <div class="campus-col">
+                   <img src=" https://i.ibb.co/bQkWvNm/main-qimg-ffaba1c109b90f68faaa90b015bdbbe6.png " width="100%">
+                   <div class="layer">
+                       <h3>KURUKSHETRA</h3>
+                   </div>
+               </div>
+               <div class="campus-col">
+                   <img src=" https://i.ibb.co/MCydQW5/images-10.jpg"width="100%">
+                   <div class="layer">
+                       <h3>KURUKSHETRA</h3>
+                   </div>
+               </div>
+               <div class="campus-col">
+                   <img src=" https://i.ibb.co/kBDC2rm/images-11.jpg"width="100%">
+                   <div class="layer">
+                       <h3>KURUKSHETRA</h3>
+                   </div>
+               </div>
+               
+               
+           </div>      
+            
+        </section>
+        <section class="rk">
+        <h1>Our facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        
+        <div class="row">
+            <div class="facility">
+                <img src="  https://i.ibb.co/cc27dWm/images-12.jpg " width="100%">
+                <h3><a href="#">world class library</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                
+            </div>
+            <div class="row">
+            <div class="facility">
+                <img src="  https://i.ibb.co/zNBzK0F/images-13.jpg" width="100%">
+                <h3><a href="#">largest play ground</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                
+            </div>
+            
+            <div class="row">
+            <div class="facility">
+                <img src="  https://i.ibb.co/s9h8ZLV/images-14.jpg " width="100%">
+                <h3><a href="#"> tasty and healthy food</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                
+                
+            </div>
+            
+            
+            
+            
+            
+        </div> 
+        </section>
+        <section class="test">
+            <h3> What our student says?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="test-col">
+                    <img src="https://i.ibb.co/BzRPq8f/Screenshot-20220312-023810.jpg " width="80%">
+                    
+                   <div>
+                       
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services</p>
+                       <h3>Rishav Raj</h3>
+                     <i class="fa fa-star"></i>  
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star-o"></i> 
+                                       
+                   </div>                    
+                    
+                </div>
+                <div class="test-col">
+                    <img src=" https://i.ibb.co/9VWMTJ0/Screenshot-20220312-023619.jpg " width="80%">
+                    
+                   <div>
+                       
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data. Often, developers use third-party services</p>
+                       <h3>Shivansh kumar jha</h3>
+                       <i class="fa fa-star"></i>  
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star"></i> 
+                    <i class="fa fa-star-o"></i> 
+                                       
+                       
+                   </div>
+                    
+                </div>
+                
+                
+                
+                
+            </div>
+        </section>
+        <section class="cta">
+        <h1>Enroll For our various cources </br>Anywhere from the world</h1>
+        <a href="#" class="btn">Contact</a>
+            
+            
+            
+            
+            
+            
+        </section>
+        <section class="footer">
+            <h4>About</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa Lorem ipsum” dummy text is used by many web-developers to test how their HTML templates will look with real data.</p>
+            <div class="icons">
+                
+               <i class="fa fa-facebook"></i> 
+                <i class="fa fa-twitter"></i> 
+                <i class="fa fa-instagram"></i> 
+                <i class="fa fa-linkedin"></i> 
+                
+                
+            </div>
+            <p>Made with<i class="fa fa-heart-o"></i>by Rishav Raj</p>
+        </section>
+        
+    </body>
+    <footer class="kk">
+    <a href="https://youtube.com/channel/UC4fkjARcVyh6QBp8zUjlxlg ">My youtube channel</a></footer>
+</html>
